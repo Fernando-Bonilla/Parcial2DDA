@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+/*using Microsoft.AspNetCore.Mvc;
 
 namespace Parcial2DDA.Controllers
 {
@@ -8,6 +8,7 @@ namespace Parcial2DDA.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
+            //
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
@@ -31,3 +32,4 @@ namespace Parcial2DDA.Controllers
         }
     }
 }
+*/
