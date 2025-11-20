@@ -8,6 +8,6 @@ namespace Parcial2DDA.Models
         public string? Huella { get; set; }
         public decimal Peso { get; set; }
         public string? Tipo { get; set; }
-        public DateTime Duracion { get; set; } = DateTime.UtcNow;
+        public DateTime Duracion { get; set; } = DateTime.Now;
     }
 }

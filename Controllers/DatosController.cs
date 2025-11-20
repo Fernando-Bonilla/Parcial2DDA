@@ -24,10 +24,34 @@ namespace Parcial2DDA.Controllers
             {
                 return BadRequest("Por favor ingrese los datos");
             }
-            
+
+            string tipoHuella = huella.Tipo.Trim().ToLower();           
+
             await _calculosService.crearAltaHuella(huella);
 
+            Console.WriteLine(tipoHuella);
+            if (tipoHuella == "salida")
+            {
+                _calculosService.calculos(huella.Huella);
+            }
+
             return Ok();
+        }
+
+        [HttpGet("/reportes/total")]
+        public async Task<ActionResult> obtenerTotalMediociones()
+        {
+            int total = await _calculosService.medicionesCompletadas();
+
+            return Ok(new {Total_mediciones_completadas = total} );
+        }
+
+        [HttpGet("/reportes/maxima_diferencia_peso")]
+        public async Task<ActionResult> obtenerMayorDiferenciaPeso()
+        {
+            decimal total = await _calculosService.mayorDiferenciaPeso();
+
+            return Ok(new { maxima_diferencia_peso = total });
         }
 
         // GET: api/<DatosController>
