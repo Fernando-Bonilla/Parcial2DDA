@@ -53,38 +53,6 @@ namespace Parcial2DDA.Controllers
 
             return Ok(new { maxima_diferencia_peso = total });
         }
-
-        // GET: api/<DatosController>
-        /*[HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }*/
-
-
-        // GET api/<DatosController>/5
-        /* [HttpGet("{id}")]
-         public string Get(int id)
-         {
-             return "value";
-         }
-
-         // POST api/<DatosController>
-         [HttpPost]
-         public void Post([FromBody] string value)
-         {
-         }
-
-         // PUT api/<DatosController>/5
-         [HttpPut("{id}")]
-         public void Put(int id, [FromBody] string value)
-         {
-         }
-
-         // DELETE api/<DatosController>/5
-         [HttpDelete("{id}")]
-         public void Delete(int id)
-         {
-         }*/
+      
     }
 }
